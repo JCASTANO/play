@@ -9,6 +9,9 @@ scalaVersion := "2.11.11"
 libraryDependencies += javaJdbc
 libraryDependencies += cache
 libraryDependencies += javaWs
+libraryDependencies += "org.mockito" % "mockito-all" % "1.10.19"
+
+jacoco.settings
 
 // Compile the project before generating Eclipse files, so that generated .scala or .class files for views and routes are present
 EclipseKeys.preTasks := Seq(compile in Compile)
