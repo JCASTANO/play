@@ -11,6 +11,18 @@ public class ServiceModule extends AbstractModule {
 
     @Override
     public void configure() {
-    	bind(CompanyService.class).toInstance(new CompanyService(new CompanyRepository(new CompanyServiceAclImpl(new CompanyFacade(),new CompanyTranslator()))));
+    	bind(CompanyService.class).toInstance(createCompanyService());
     }
+
+	private CompanyService createCompanyService() {
+		return new CompanyService(createCompanyRepository());
+	}
+
+	private CompanyRepository createCompanyRepository() {
+		return new CompanyRepository(createCompanyServiceAcl());
+	}
+
+	private CompanyServiceAclImpl createCompanyServiceAcl() {
+		return new CompanyServiceAclImpl(new CompanyFacade(),new CompanyTranslator());
+	}
 }
