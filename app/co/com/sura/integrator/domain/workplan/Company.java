@@ -1,4 +1,4 @@
-package co.com.sura.integrator.domain;
+package co.com.sura.integrator.domain.workplan;
 
 public class Company {
 

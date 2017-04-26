@@ -3,7 +3,7 @@ package co.com.sura.integrator.controller;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 
-import co.com.sura.integrator.domain.service.CompanyService;
+import co.com.sura.integrator.domain.workplan.service.CompanyService;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
@@ -11,7 +11,7 @@ import play.mvc.Result;
 @Singleton
 public class CompanyController extends Controller {
 
-    private final CompanyService companyService;
+    private CompanyService companyService;
 
     @Inject
     public CompanyController(CompanyService companyService) {

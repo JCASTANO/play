@@ -3,6 +3,7 @@ package co.com.sura.integrator.domain;
 import org.junit.Assert;
 import org.junit.Test;
 
+import co.com.sura.integrator.domain.workplan.Company;
 import co.com.sura.integrator.testdatabuilder.CompanyTestDataBuilder;
 
 public class CompanyTest {

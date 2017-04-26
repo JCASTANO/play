@@ -1,6 +1,6 @@
 package co.com.sura.integrator.testdatabuilder;
 
-import co.com.sura.integrator.domain.Company;
+import co.com.sura.integrator.domain.workplan.Company;
 
 public class CompanyTestDataBuilder {
 	
