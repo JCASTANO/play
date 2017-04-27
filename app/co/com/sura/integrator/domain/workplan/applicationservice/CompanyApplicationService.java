@@ -1,13 +1,13 @@
-package co.com.sura.integrator.domain.workplan.service;
+package co.com.sura.integrator.domain.workplan.applicationservice;
 
 import co.com.sura.integrator.domain.workplan.Company;
 import co.com.sura.integrator.domain.workplan.repository.CompanyRepository;
 
-public class CompanyService {
+public class CompanyApplicationService {
 
 	private CompanyRepository companyRepository;
 	
-	public CompanyService(CompanyRepository companyRepository) {
+	public CompanyApplicationService(CompanyRepository companyRepository) {
 		this.companyRepository = companyRepository;
 	}
 

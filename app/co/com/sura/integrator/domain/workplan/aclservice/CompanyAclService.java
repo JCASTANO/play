@@ -1,8 +1,8 @@
-package co.com.sura.integrator.domain.workplan.serviceacl;
+package co.com.sura.integrator.domain.workplan.aclservice;
 
 import co.com.sura.integrator.domain.workplan.Company;
 
-public interface CompanyServiceAcl {
+public interface CompanyAclService {
 
 	Company getByIdentification(String documentType,String documentNumber);
 }
